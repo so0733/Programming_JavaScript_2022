@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>끝말잇기</title>
+</head>
+
+<body>
+    <div><span id="order">1</span> 번째 참가자</div>
+    <div> 제시어 : <span id="word"></span></div>
+    <input type="text">
+    <button>입력</button>
+
+    <script>    
+        const number = prompt('몇 명이 참가합니까?');
+        alert(number);
+
+        const onClickButton = () => {
+            console.log('버튼 클릭');
+        };
+
+        const $button = document.querySelector('button'); // 버튼 이벤트 ★
+        $button.addEventListener('click', onClickButton);
+
+        const onInput = (event) => {                      // 입력 이벤트 ★
+            console.log('글자 입력', event.target.value);
+        };
+        
+        const $input = document.querySelector('input');
+        $input.addEventListener('input', onInput);
+
+        /*
+        document.querySelector('button').addEventListener('click', () => {  // 버튼 이벤트 ★
+            console.log('버튼 클릭');
+        });
+        */
+        
+    </script>
+</body>
+</body>
+
+</html>

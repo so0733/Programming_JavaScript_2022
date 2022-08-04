@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>끝말잇기</title>
+</head>
+
+<body>
+    <div><span id="order">1</span> 번째 참가자</div>
+    <div> 제시어 : <span id="word"></span></div>
+    <input type="text">
+    <button>입력</button>
+
+    <script>    // 자바스크립트 코드 작성
+        // prompt('몇 명이 참가합니까?');  // 대화상자 띄우기 ★
+        const number = prompt('몇 명이 참가합니까?');
+        console.log('number', number);
+
+        const realNumber = Number(number);
+        console.log(typeof realNumber);
+
+        alert(number);  // 어떠한 메시지를 사용자에게 알림 ★
+
+        const YesOrNo = confirm('확인이나 취소를 눌러보세요!'); // 사용자에게 의사를 물어봄 ★
+        console.log(YesOrNo);
+
+    </script>
+</body>
+
+</html>

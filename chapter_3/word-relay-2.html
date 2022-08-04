@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>끝말잇기</title>
+</head>
+
+<body>
+    <div><span id="order">1</span> 번째 참가자</div>
+    <div> 제시어 : <span id="word"></span></div>
+    <input type="text">
+    <button>입력</button>
+    <button>버튼2</button>
+    <button>버튼3</button>
+
+    <script>    
+        const number = prompt('몇 명이 참가합니까?');
+        alert(number);
+
+        const $input = document.querySelector('input'); // 하나의 태그만을 선택 ★
+        console.log($input);
+
+        // const $button = document.querySelector('button');
+        // console.log($button);
+        
+        const $$buttons = document.querySelectorAll('button');  // 태그를 모두 선택 ★
+        console.log($$buttons);
+    </script>
+</body>
+</body>
+
+</html>
